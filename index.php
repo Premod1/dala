@@ -149,10 +149,10 @@
     <!-- Navbar End -->
 
     <!-- Header Start -->
-    <div class="container-fluid hero-header bg-light py-1 mb-5">
-        <div class="row">
-            <div class="banner">
-                <img class="img-fluid me-2" src="img/Banner.jpg" alt="bgimage">
+    <div class="container-fluid hero-header bg-light py-2 mb-12  ">
+        <div class="row ">
+            <div class="banner h-500 ">
+                <img class="img-fluid " src="img/Banner.jpg" alt="bgimage">
 
                 <!--
                 <h2 class="heading">PROFFESIONAL FINANCING</h2>
