@@ -34,59 +34,88 @@
     <link rel="stylesheet" type="text/css" href="css/main.min.css">
 
     <style>
-        p{
+        p {
             color: black;
         }
-		.banner{position: relative; width: 100%;margin: 0 auto;}
-		.banner img{width: 100%;}
-		.heading{ color:rgb(255, 255, 255); position: absolute; top:20%; width: 50%; text-align: left; font-size: 2vw; margin-left: 7%; margin-top: 3%;}
-        .heading2{ color:rgb(255, 255, 255); position: absolute; top:20%; width: 40%; text-align: left; font-size: 0.9vw; margin-left: 7%; margin-top: 6%;}
+
+        .banner {
+            position: relative;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .banner img {
+            width: 100%;
+        }
+
+        .heading {
+            color: rgb(255, 255, 255);
+            position: absolute;
+            top: 20%;
+            width: 50%;
+            text-align: left;
+            font-size: 2vw;
+            margin-left: 7%;
+            margin-top: 3%;
+        }
+
+        .heading2 {
+            color: rgb(255, 255, 255);
+            position: absolute;
+            top: 20%;
+            width: 40%;
+            text-align: left;
+            font-size: 0.9vw;
+            margin-left: 7%;
+            margin-top: 6%;
+        }
 
         .vl {
             border-left: thick solid #007eec;
         }
 
         .container22 {
-        padding: 2px 2px;
-        width: 100%;
-        margin: 0 auto;
+            padding: 2px 2px;
+            width: 100%;
+            margin: 0 auto;
         }
 
         .image-stack {
-        position: relative;
-        width: 80%;
+            position: relative;
+            width: 80%;
         }
 
         .image-stack__item--bottom {
-        position: absolute;
-        right: 0;
-        top: 0;
-        width: 80%; 
-        margin-right: -23%;
-        z-index: -1;
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 80%;
+            margin-right: -23%;
+            z-index: -1;
         }
 
         .image-stack__item--top {
-        padding-top: 13%; 
-        padding-right: 0%; 
-        width: 80%; 
+            padding-top: 13%;
+            padding-right: 0%;
+            width: 80%;
         }
 
         .img_class1 {
-        width: 100%;
-        display: block;
+            width: 100%;
+            display: block;
         }
 
         .sizeDivLeft {
-                margin: 3px 1px 1px  15%;
-        }
-        .center {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
+            margin: 3px 1px 1px 15%;
         }
 
-       /*mobile view*/
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /*mobile view*/
         @media only screen and (max-width: 600px) {
             .sizeDivLeft {
                 margin: 3px 1px 1px 12px;
@@ -95,42 +124,43 @@
 
 
         .collapsibledala {
-        background-color: #002c94;
-        color: white;
-        cursor: pointer;
-        padding: 18px;
-        width: 100%;
-        border: none;
-        text-align: left;
-        outline: none;
-        font-size: 15px;
-        border-style: ridge;
+            background-color: #002c94;
+            color: white;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+            border-style: ridge;
         }
 
-        .activedala, .collapsibledala:hover {
-        background-color: #555;
+        .activedala,
+        .collapsibledala:hover {
+            background-color: #555;
         }
 
         .collapsibledala:after {
-        content: '\002B';
-        color: white;
-        font-weight: bold;
-        float: right;
-        margin-left: 5px;
+            content: '\002B';
+            color: white;
+            font-weight: bold;
+            float: right;
+            margin-left: 5px;
         }
 
         .activedala:after {
-        content: "\2212";
+            content: "\2212";
         }
 
         .contentdala {
-        padding: 0 18px;
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 0.2s ease-out;
-        background-color: #e6e6e6;
+            padding: 0 18px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+            background-color: #e6e6e6;
         }
-	</style>
+    </style>
 </head>
 
 <body>
@@ -141,37 +171,37 @@
     </div>
     <!-- Spinner End -->
 
-   <!-- Navbar Start -->
+    <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0 px-4 px-lg-5">
-            <a href="index.html" class="navbar-brand d-flex align-items-center">
-                <img class="img-fluid me-2" src="img/icon-1.png" alt="" style="width: 240px;">
-            </a>
-            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <div class="navbar-nav ms-auto py-4 py-lg-0">
-                    <a href="index.php" class="nav-item nav-link">HOME</a>
-                    <a href="about-us.php" class="nav-item nav-link active">ABOUT US</a>
-                    <a href="news.php" class="nav-item nav-link">NEWS</a>
-                    <a href="contact.php" class="nav-item nav-link">CONTACT US</a>
-                </div>
+        <a href="index.html" class="navbar-brand d-flex align-items-center">
+            <img class="img-fluid me-2" src="img/icon-1.png" alt="" style="width: 240px;">
+        </a>
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto py-4 py-lg-0">
+                <a href="index.php" class="nav-item nav-link">HOME</a>
+                <a href="about-us.php" class="nav-item nav-link active">ABOUT US</a>
+                <a href="news.php" class="nav-item nav-link">NEWS</a>
+                <a href="contact.php" class="nav-item nav-link">CONTACT US</a>
             </div>
+        </div>
     </nav>
     <!-- Navbar End -->
 
     <!-- Header Start -->
     <div class="container-fluid hero-header bg-light py-1 mb-5">
-		<div class="row">
-			<div class="banner">
-				<img class="img-fluid me-2" src="img/Banner.png" alt="bgimage">
+        <div class="row">
+            <div class="banner">
+                <img class="img-fluid me-2" src="img/Banner.png" alt="bgimage">
                 <!--
-				<h2 class="heading">ABOUT US</h2>
+                <h2 class="heading">ABOUT US</h2>
                 <p class="heading2">DALA was incorporated as a company limited by guarantee under the Companies Act No.7 of 2007 (No. GA00244823) to promote and protect the digital lending business in Sri Lanka. Currently, Our members employ 400+ persons and cater to the financial needs of over 750,000 Sri Lankans.<br><br>DALA is a collective of companies that promote the sustainable growth of the digital lending business in Sri Lanka by way of self-governance and ethical business practices which are given in the DALA Code of Conduct.</p>
                 -->
-			 </div>
-		</div>
-	</div>
+            </div>
+        </div>
+    </div>
     <!-- Header End -->
     <!--
     <div class="container-xxl py-5">
@@ -213,13 +243,18 @@
     </div>
     -->
 
-    <div class="container-xxl py-5" style="width: 60%;">
+    <div class="container-xxl py-20" style="width: 60%;">
         <div class="container">
             <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 700px;">
                 <h1 class="display-6"><span class="vl"></span>&nbsp;ABOUT US</h1>
             </div>
             <br>
-            <p class="text-center">DALA was incorporated as a company limited by guarantee under the Companies Act No.7 of 2007 (No. GA00244823) to promote and protect the digital lending business in Sri Lanka. Currently, Our members employ 400+ persons and cater to the financial needs of over 750,000 Sri Lankans.<br><br>DALA is a collective of companies that promote the sustainable growth of the digital lending business in Sri Lanka by way of self-governance and ethical business practices which are given in the DALA Code of Conduct.</p>
+            <p class="text-center">DALA was incorporated as a company limited by guarantee under the Companies Act No.7
+                of 2007 (No. GA00244823) to promote and protect the digital lending business in Sri Lanka. Currently,
+                Our members employ 400+ persons and cater to the financial needs of over 750,000 Sri
+                Lankans.<br><br>DALA is a collective of companies that promote the sustainable growth of the digital
+                lending business in Sri Lanka by way of self-governance and ethical business practices which are given
+                in the DALA Code of Conduct.</p>
             <br>
         </div>
     </div>
@@ -232,30 +267,42 @@
                 </div>
             </div>
             <div class="row">
-            <div class="col-md-4">
+                <div class="col-md-4">
                     <div class="card mb-4 box-shadow">
                         <img class="card-img-top" src="img/dala_members/Polina_Vertey.jpg" alt="Card image cap">
                         <div class="card-body" style="background-color: #0e0c5f;">
-                            <p class="card-text" style="font-size: 19px;color:white;text-align: center; font-weight: 700;">Polina Vertey - Chairperson</p>
-                            <p class="card-text" style="color:white;">< Profile description here ></p>
+                            <p class="card-text"
+                                style="font-size: 19px;color:white;text-align: center; font-weight: 700;">Polina Vertey
+                                - Chairperson</p>
+                            <p class="card-text" style="color:white;">
+                                < Profile description here>
+                            </p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card mb-4 box-shadow">
-                        <img class="card-img-top" src="img/dala_members/Vadym_Bortnyk.jpg"  alt="Card image cap">
+                        <img class="card-img-top" src="img/dala_members/Vadym_Bortnyk.jpg" alt="Card image cap">
                         <div class="card-body" style="background-color: #0e0c5f;">
-                            <p class="card-text" style="font-size: 19px;color:white;text-align: center; font-weight: 700;">Vadym Bortnyk</p>
-                            <p class="card-text" style="color:white;">< Profile description here ></p>
+                            <p class="card-text"
+                                style="font-size: 19px;color:white;text-align: center; font-weight: 700;">Vadym Bortnyk
+                            </p>
+                            <p class="card-text" style="color:white;">
+                                < Profile description here>
+                            </p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card mb-4 box-shadow">
-                        <img class="card-img-top" src="img/dala_members/Igors_Zemits.jpg"  alt="Card image cap">
+                        <img class="card-img-top" src="img/dala_members/Igors_Zemits.jpg" alt="Card image cap">
                         <div class="card-body" style="background-color: #0e0c5f;">
-                            <p class="card-text" style="font-size: 19px;color:white;text-align: center; font-weight: 700;">Igors Zemits</p>
-                            <p class="card-text" style="color:white;">< Profile description here ></p>
+                            <p class="card-text"
+                                style="font-size: 19px;color:white;text-align: center; font-weight: 700;">Igors Zemits
+                            </p>
+                            <p class="card-text" style="color:white;">
+                                < Profile description here>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -263,8 +310,12 @@
                     <div class="card mb-4 box-shadow">
                         <img class="card-img-top" src="img/dala_members/Alexander_Afanasyev.jpg" alt="Card image cap">
                         <div class="card-body" style="background-color: #0e0c5f;">
-                            <p class="card-text" style="font-size: 19px;color:white;text-align: center; font-weight: 700;">Alexander Afanasyev</p>
-                            <p class="card-text" style="color:white;">< Profile description here ></p>
+                            <p class="card-text"
+                                style="font-size: 19px;color:white;text-align: center; font-weight: 700;">Alexander
+                                Afanasyev</p>
+                            <p class="card-text" style="color:white;">
+                                < Profile description here>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -272,8 +323,12 @@
                     <div class="card mb-4 box-shadow">
                         <img class="card-img-top" src="img/dala_members/Ivan_Streltsov.jpg" alt="Card image cap">
                         <div class="card-body" style="background-color: #0e0c5f;">
-                            <p class="card-text" style="font-size: 19px;color:white;text-align: center; font-weight: 700;">Ivan Streltsov</p>
-                            <p class="card-text" style="color:white;">< Profile description here ></p>
+                            <p class="card-text"
+                                style="font-size: 19px;color:white;text-align: center; font-weight: 700;">Ivan Streltsov
+                            </p>
+                            <p class="card-text" style="color:white;">
+                                < Profile description here>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -288,30 +343,40 @@
                 </div>
             </div>
             <div class="row">
-            <div class="col-md-4">
+                <div class="col-md-4">
                     <div class="card mb-4 box-shadow">
-                        <img class="card-img-top" src="img/dala_members/Ranil_de_silva.jpg"  alt="Card image cap">
+                        <img class="card-img-top" src="img/dala_members/Ranil_de_silva.jpg" alt="Card image cap">
                         <div class="card-body" style="background-color: #0e0c5f;">
-                            <p class="card-text" style="font-size: 19px;color:white;text-align: center; font-weight: 700;">Ranil De Silva - President</p>
-                            <p class="card-text" style="color:white;">< Profile description here ></p>
-                        </div>
-                    </div>
-                </div>
-            <div class="col-md-4">
-                    <div class="card mb-4 box-shadow">
-                        <img class="card-img-top" src="img/dala_members/noimage.png" alt="Card image cap">
-                        <div class="card-body" style="background-color: #0e0c5f;">
-                            <p class="card-text" style="font-size: 19px;color:white;text-align: center; font-weight: 700;">Person 2</p>
-                            <p class="card-text" style="color:white;">< Profile description here ></p>
+                            <p class="card-text"
+                                style="font-size: 19px;color:white;text-align: center; font-weight: 700;">Ranil De Silva
+                                - President</p>
+                            <p class="card-text" style="color:white;">
+                                < Profile description here>
+                            </p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card mb-4 box-shadow">
-                        <img class="card-img-top" src="img/dala_members/noimage.png"  alt="Card image cap">
+                        <img class="card-img-top" src="img/dala_members/noimage.png" alt="Card image cap">
                         <div class="card-body" style="background-color: #0e0c5f;">
-                            <p class="card-text" style="font-size: 19px;color:white;text-align: center; font-weight: 700;">Person 3</p>
-                            <p class="card-text" style="color:white;">< Profile description here ></p>
+                            <p class="card-text"
+                                style="font-size: 19px;color:white;text-align: center; font-weight: 700;">Person 2</p>
+                            <p class="card-text" style="color:white;">
+                                < Profile description here>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 box-shadow">
+                        <img class="card-img-top" src="img/dala_members/noimage.png" alt="Card image cap">
+                        <div class="card-body" style="background-color: #0e0c5f;">
+                            <p class="card-text"
+                                style="font-size: 19px;color:white;text-align: center; font-weight: 700;">Person 3</p>
+                            <p class="card-text" style="color:white;">
+                                < Profile description here>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -327,13 +392,20 @@
                 </div>
             </div>
             <div class="align-items-top mb-3">
-                <span><i class="fas fa-caret-right"></i> &nbsp;The DALA Code of Conduct is an important milestone for Sri Lanka’s online lending services industry as it provides a self-regulatory platform for its members.</span>
+                <span><i class="fas fa-caret-right"></i> &nbsp;The DALA Code of Conduct is an important milestone for
+                    Sri Lanka’s online lending services industry as it provides a self-regulatory platform for its
+                    members.</span>
             </div>
             <div class="align-items-top mb-3">
-                <span><i class="fas fa-caret-right"></i> &nbsp;Recognising the need for the industry to take action to improve itself, DALA members have worked together to develop a code of conduct that promotes good conduct and a strong customer-focused culture. The Code of Conduct supports existing laws and regulations, bringing self-regulation to the industry.</span>
+                <span><i class="fas fa-caret-right"></i> &nbsp;Recognising the need for the industry to take action to
+                    improve itself, DALA members have worked together to develop a code of conduct that promotes good
+                    conduct and a strong customer-focused culture. The Code of Conduct supports existing laws and
+                    regulations, bringing self-regulation to the industry.</span>
             </div>
             <div class=" align-items-top mb-3">
-                <span><i class="fas fa-caret-right"></i> &nbsp;This Code of Conduct demonstrates the commitment of DALA members to continuously improving conduct, culture, and consumer outcomes for the benefit of Sri Lankans and the Sri Lankan economy.</span>
+                <span><i class="fas fa-caret-right"></i> &nbsp;This Code of Conduct demonstrates the commitment of DALA
+                    members to continuously improving conduct, culture, and consumer outcomes for the benefit of Sri
+                    Lankans and the Sri Lankan economy.</span>
             </div>
 
             <!--
@@ -362,22 +434,22 @@
             -->
 
             <script>
-            var coll = document.getElementsByClassName("collapsibledala");
-            var i;
+                var coll = document.getElementsByClassName("collapsibledala");
+                var i;
 
-            for (i = 0; i < coll.length; i++) {
-            coll[i].addEventListener("click", function() {
-                this.classList.toggle("activedala");
-                var content = this.nextElementSibling;
-                if (content.style.maxHeight){
-                content.style.maxHeight = null;
-                } else {
-                content.style.maxHeight = content.scrollHeight + "px";
-                } 
-            });
-            }
+                for (i = 0; i < coll.length; i++) {
+                    coll[i].addEventListener("click", function () {
+                        this.classList.toggle("activedala");
+                        var content = this.nextElementSibling;
+                        if (content.style.maxHeight) {
+                            content.style.maxHeight = null;
+                        } else {
+                            content.style.maxHeight = content.scrollHeight + "px";
+                        }
+                    });
+                }
             </script>
-           
+
         </div>
     </div>
 
@@ -391,58 +463,76 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="card mb-4 box-shadow">
-                        <img class="card-img-top" style="padding: 50px 50px 70px;" src="img/our_members/ROBO_CASH.png" alt="Card image cap">
+                        <img class="card-img-top" style="padding: 50px 50px 70px;" src="img/our_members/ROBO_CASH.png"
+                            alt="Card image cap">
                         <div class="card-body" style="background-color: none;">
                             <p class="card-text" style="color:black;">Description Here (Characters 150 - 250)</p>
                         </div>
-                        <p style="font-size:16px; text-align: center;"><u><b><a href="https://robocash.lk/" target="_blank">Visit Us</a></b></u>&nbsp;<i class="fa fa-angle-right" style="color:#2772FF"></i></p>
+                        <p style="font-size:16px; text-align: center;"><u><b><a href="https://robocash.lk/"
+                                        target="_blank">Visit Us</a></b></u>&nbsp;<i class="fa fa-angle-right"
+                                style="color:#2772FF"></i></p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card mb-4 box-shadow">
-                        <img class="card-img-top" style="padding: 26px 50px 52px;" src="img/our_members/LOTUS_LOAN.svg" alt="Card image cap">
+                        <img class="card-img-top" style="padding: 26px 50px 52px;" src="img/our_members/LOTUS_LOAN.svg"
+                            alt="Card image cap">
                         <div class="card-body" style="background-color: none;">
                             <p class="card-text" style="color:black;">Description Here (Characters 150 - 250)</p>
                         </div>
-                        <p style="font-size:16px; text-align: center;"><u><b><a href="https://lotus.loan/" target="_blank">Visit Us</a></b></u>&nbsp;<i class="fa fa-angle-right" style="color:#2772FF"></i></p>
+                        <p style="font-size:16px; text-align: center;"><u><b><a href="https://lotus.loan/"
+                                        target="_blank">Visit Us</a></b></u>&nbsp;<i class="fa fa-angle-right"
+                                style="color:#2772FF"></i></p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card mb-4 box-shadow">
-                        <img class="card-img-top" style="padding: 50px 50px 80px;" src="img/our_members/LOANME_LOGO.png" alt="Card image cap">
+                        <img class="card-img-top" style="padding: 50px 50px 80px;" src="img/our_members/LOANME_LOGO.png"
+                            alt="Card image cap">
                         <div class="card-body" style="background-color: none;">
                             <p class="card-text" style="color:black;">Description Here (Characters 150 - 250)</p>
                         </div>
-                        <p style="font-size:16px; text-align: center;"><u><b><a href="https://loanme.lk/en" target="_blank">Visit Us</a></b></u>&nbsp;<i class="fa fa-angle-right" style="color:#2772FF"></i></p>
-                    </div>
-                </div>  
-                <div class="col-md-4">
-                    <div class="card mb-4 box-shadow">
-                        <img class="card-img-top" style="padding: 30px 50px 50px;" src="img/our_members/FINOL.LK2.jpg" alt="Card image cap">
-                        <div class="card-body" style="background-color: none;">
-                            <p class="card-text" style="color:black;">Description Here (Characters 150 - 250)</p>
-                        </div>
-                        <p style="font-size:16px; text-align: center;"><u><b><a href="https://www.fino.lk/en" target="_blank">Visit Us</a></b></u>&nbsp;<i class="fa fa-angle-right" style="color:#2772FF"></i></p>
+                        <p style="font-size:16px; text-align: center;"><u><b><a href="https://loanme.lk/en"
+                                        target="_blank">Visit Us</a></b></u>&nbsp;<i class="fa fa-angle-right"
+                                style="color:#2772FF"></i></p>
                     </div>
                 </div>
-               
                 <div class="col-md-4">
                     <div class="card mb-4 box-shadow">
-                        <img class="card-img-top" style="padding: 50px 50px 53px;" src="img/our_members/CASHX_LOGO.jpeg" alt="Card image cap">
+                        <img class="card-img-top" style="padding: 30px 50px 50px;" src="img/our_members/FINOL.LK2.jpg"
+                            alt="Card image cap">
                         <div class="card-body" style="background-color: none;">
                             <p class="card-text" style="color:black;">Description Here (Characters 150 - 250)</p>
                         </div>
-                        <p style="font-size:16px; text-align: center;"><u><b><a href="https://cashx.lk/en/" target="_blank">Visit Us</a></b></u>&nbsp;<i class="fa fa-angle-right" style="color:#2772FF"></i></p>
+                        <p style="font-size:16px; text-align: center;"><u><b><a href="https://www.fino.lk/en"
+                                        target="_blank">Visit Us</a></b></u>&nbsp;<i class="fa fa-angle-right"
+                                style="color:#2772FF"></i></p>
                     </div>
                 </div>
 
                 <div class="col-md-4">
                     <div class="card mb-4 box-shadow">
-                        <img class="card-img-top" style="padding: 30px 50px 45px;" src="img/our_members/ONE_CREDIT.png" alt="Card image cap">
+                        <img class="card-img-top" style="padding: 50px 50px 53px;" src="img/our_members/CASHX_LOGO.jpeg"
+                            alt="Card image cap">
                         <div class="card-body" style="background-color: none;">
                             <p class="card-text" style="color:black;">Description Here (Characters 150 - 250)</p>
                         </div>
-                        <p style="font-size:16px; text-align: center;"><u><b><a href="https://www.oncredit.lk/en" target="_blank">Visit Us</a></b></u>&nbsp;<i class="fa fa-angle-right" style="color:#2772FF"></i></p>
+                        <p style="font-size:16px; text-align: center;"><u><b><a href="https://cashx.lk/en/"
+                                        target="_blank">Visit Us</a></b></u>&nbsp;<i class="fa fa-angle-right"
+                                style="color:#2772FF"></i></p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card mb-4 box-shadow">
+                        <img class="card-img-top" style="padding: 30px 50px 45px;" src="img/our_members/ONE_CREDIT.png"
+                            alt="Card image cap">
+                        <div class="card-body" style="background-color: none;">
+                            <p class="card-text" style="color:black;">Description Here (Characters 150 - 250)</p>
+                        </div>
+                        <p style="font-size:16px; text-align: center;"><u><b><a href="https://www.oncredit.lk/en"
+                                        target="_blank">Visit Us</a></b></u>&nbsp;<i class="fa fa-angle-right"
+                                style="color:#2772FF"></i></p>
                     </div>
                 </div>
                 <!--
@@ -478,18 +568,24 @@
             </div>
             <br>
             <p>
-            Membership at DALA is an ideal forum to share industrial experiences and connect with fellow members. The association represents its members common interests with government bodies in order to promote business and maintain the integrity of the digital lending business in Sri Lanka. At the same time, DALA functions as a knowledge base for its members to share regular market updates and help each other in resolving industry issues.
-We welcome entities associated with the wider fintech industry to join DALA as a member or a partner organization. Let us join hands to develop the fintech industry in Sri Lanka. 
-        </p>
-        <hr>
-        <p class="text-center">
-        If you wish to join DALA, please connect with us via email: <b><span style="color:#0292e3;">info@dala.lk</span></b>
-        </p>  
+                Membership at DALA is an ideal forum to share industrial experiences and connect with fellow members.
+                The association represents its members common interests with government bodies in order to promote
+                business and maintain the integrity of the digital lending business in Sri Lanka. At the same time, DALA
+                functions as a knowledge base for its members to share regular market updates and help each other in
+                resolving industry issues.
+                We welcome entities associated with the wider fintech industry to join DALA as a member or a partner
+                organization. Let us join hands to develop the fintech industry in Sri Lanka.
+            </p>
+            <hr>
+            <p class="text-center">
+                If you wish to join DALA, please connect with us via email: <b><span
+                        style="color:#0292e3;">info@dala.lk</span></b>
+            </p>
         </div>
     </div>
 
-   <!-- Footer Start -->
-   <?php include 'footer.php';?>
+    <!-- Footer Start -->
+    <?php include 'footer.php'; ?>
     <!-- Footer End -->
 
 
